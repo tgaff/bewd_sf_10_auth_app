@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'test', to: 'static_pages#test'
 
   root 'static_pages#home'
